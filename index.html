@@ -308,7 +308,7 @@ nav .ln a.is-active:hover::after{background:var(--k)}
 @media(max-width:760px){
 .gx-hz{height:200vh}
 .gx-line{font-size:clamp(2rem,9.6vw,3.4rem);line-height:1.28}
-.gx-st{position:relative;right:auto;top:auto;width:100%;height:170px;margin-top:10px}
+.gx-st{position:relative;left:auto;right:auto;top:auto;width:100%;height:170px;margin-top:10px}
 .gx-ring{right:40%}.gx-ast{right:52%;top:58%}}
 @media(prefers-reduced-motion:reduce){
 .gx-hz{height:auto}.gx-pin{position:relative;height:auto;padding:120px var(--p)}
@@ -408,6 +408,8 @@ canvas#c{z-index:1}
 .fin{cursor:pointer}
 .fin .fin-ch.hit{color:inherit;-webkit-text-stroke:0}
 .fin-ch.lift{position:relative;z-index:1;text-shadow:0 .1em .22em rgba(0,0,0,.55)}
+
+html,body{overflow-x:hidden}@supports(overflow:clip){html,body{overflow-x:clip}}
 </style>
 <script>
 (()=>{const e=document.querySelector('.mv');if(!e)return;e.innerHTML=[...e.textContent].map((c,i)=>`<span class="mvl" aria-hidden="true" style="--i:${i}">${c}</span>`).join('')})();
